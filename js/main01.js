@@ -52,12 +52,12 @@
         } else {
             $("#navigation-bar").removeClass("top-nav-collapse");
         }
-        if( $("#drop").hasClass("open")){
-            $("#drop").removeClass("open")
-        }
-        if( $("#navbar").hasClass("in")){
-            $("#navbar").removeClass("in")
-        }
+        //if( $("#drop").hasClass("open")){
+        //    $("#drop").removeClass("open")
+        //}
+        //if( $("#navbar").hasClass("in")){
+        //    $("#navbar").removeClass("in")
+        //}
 
         initTop = scrollTop;
 

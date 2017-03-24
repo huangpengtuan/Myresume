@@ -276,6 +276,13 @@ abbr,acronym { border:0;
     height: 50px;
     display: block;
 }
+.da-link{
+    position: relative;
+}
+.da-link span{
+    display: block;
+    width: 100px;
+}
 
 
 /* ===================================================================
@@ -754,6 +761,13 @@ abbr,acronym { border:0;
     #navbar .navbar-right .dropdown .dropdown-menu{
         font-size: 14px;
     }
+    /*轮播插件响应式*/
+    .da-link {
+        top: 125px;
+        padding: 0.5em;
+        font-size: 0.9em;
+        margin-left: 26%;
+    }
 
     /*skills移动端样式*/
     #skills{
@@ -761,10 +775,23 @@ abbr,acronym { border:0;
         margin: 0;
     }
     .pc-style{
-             display: none;
+         display: none;
      }
+    .mobile-style{
+        display: block;
+    }
 
 }
+@media only screen and (max-width: 480px){
+    .da-slide .da-link {
+        margin-left: 18%;
+        top: 120px;
+        padding: 0.2em 1.2em;
+    }
+
+
+}
+
 
 
 
