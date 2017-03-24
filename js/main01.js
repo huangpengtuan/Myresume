@@ -55,9 +55,9 @@
         //if( $("#drop").hasClass("open")){
         //    $("#drop").removeClass("open")
         //}
-        //if( $("#navbar").hasClass("in")){
-        //    $("#navbar").removeClass("in")
-        //}
+        if( $("#navbar").hasClass("in")){
+            $("#navbar").removeClass("in")
+        }
 
         initTop = scrollTop;
 
