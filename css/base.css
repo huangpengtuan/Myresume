@@ -1295,6 +1295,13 @@ nav#filter a {
         font-size: 1.2em;
         line-height: 1;
     }
+    /*µ×²¿*/
+    .widget.meta-social.column.three.last {
+	display: none;
+	}
+	#top-footer .widget {
+	width: 29%;
+	}
 
 }
 @media only screen and (max-width: 480px){
