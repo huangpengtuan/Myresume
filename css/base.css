@@ -694,18 +694,12 @@ a{
     box-shadow:0 0 0 1px #2c3e50;
     overflow: hidden;
     -webkit-transition: background 0.4s 0.5s;
-    -moz-transition: background 0.4s 0.5s;
-    -ms-transition: background 0.4s 0.5s;
-    -o-transition: background 0.4s 0.5s;
     transition: background 0.4s 0.5s;
 }
 
 .box:hover {
     background: rgba(0,0,0,0.5);
     -webkit-transition-delay: 0s;
-    -moz-transition-delay: 0s;
-    -ms-transition-delay: 0s;
-    -o-transition-delay: 0s;
     transition-delay: 0s;
 }
 
@@ -743,9 +737,6 @@ a{
 .box span,
 .box h4{
     -webkit-transition: color 0.4s 0.5s;
-    -moz-transition: color 0.4s 0.5s;
-    -ms-transition: color 0.4s 0.5s;
-    -o-transition: color 0.4s 0.5s;
     transition: color 0.4s 0.5s;
 }
 
@@ -753,9 +744,6 @@ a{
 .box:hover span{
     color: #fff;
     -webkit-transition-delay: 0s;
-    -moz-transition-delay: 0s;
-    -ms-transition-delay: 0s;
-    -o-transition-delay: 0s;
     transition-delay: 0s;
 }
 
@@ -770,17 +758,11 @@ a{
     stroke: #ecf0f1;
     fill: none;
     -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -ms-transition: all .8s ease-in-out;
-    -m-transition: all .8s ease-in-out;
     transition: all .8s ease-in-out;
 }
 
 .box:hover svg line {
     -webkit-transition-delay: 0.1s;
-    -moz-transition-delay: 0.1s;
-    -ms-transition-delay: 0.1s;
-    -m-transition-delay: 0.1s;
     transition-delay: 0.1s;
 }
 
@@ -796,33 +778,21 @@ a{
 
 .box:hover svg line.top {
     -webkit-transform: translateX(-580px);
-    -moz-transform: translateX(-580px);
-    -ms-transform: translateX(-580px);
-    -o-transform: translateX(-580px);
     transform: translateX(-580px);
 }
 
 .box:hover svg line.bottom {
     -webkit-transform: translateX(480px);
-    -moz-transform: translateX(480px);
-    -ms-transform: translateX(480px);
-    -m-transform: translateX(480px);
     transform: translateX(480px);
 }
 
 .box:hover svg line.left {
     -webkit-transform: translateY(900px);
-    -moz-transform: translateY(900px);
-    -ms-transform: translateY(900px);
-    -o-transform: translateY(900px);
     transform: translateY(900px);
 }
 
 .box:hover svg line.right {
     -webkit-transform: translateY(-500px);
-    -moz-transform: translateY(-500px);
-    -ms-transform: translateY(-500px);
-    -o-transform: translateY(-500px);
     transform: translateY(-500px);
 }
 
