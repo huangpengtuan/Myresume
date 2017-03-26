@@ -1,7 +1,12 @@
 /** ===================================================================
- *  * Created by htp on 2017/3/9.
+ *  * Created by htp on 2016/8/9.
  * 此文件为网站js部分
- *  01. jquery-2.1.3.min
+ *  01. 导航栏部分
+ *  02. aboutme部分
+ *  03. skills部分
+ *  04. portfolio作品部分
+ *  05. footer作品部分
+ *
  *
  * ------------------------------------------------------------------- */
 
@@ -15,9 +20,8 @@
 
 
     var cfg = {
-            defAnimation   : "  ",    // default css animation
-            scrollDuration : 800,           // scroll duration
-            statsDuration  : 4000,           // stats animation duration
+            defAnimation   : "  ",
+            scrollDuration : 800,
             skillsDuration : 500
         },
         $WIN = $(window);
@@ -81,6 +85,15 @@
         });
     })
 
+//jquery.cslider轮播插件的使用
+    $('#da-slider').cslider({
+        autoplay	: true,           //自动播放
+        bgincrement	: 1000            //循环时间
+    });
+/** ===================================================================
+ *  02. aboutme部分
+ *
+ * ------------------------------------------------------------------- */
 //animate-this Animation 浮动动画
     $('.fadeHide').waypoint(function(direction) {
         $('.fadeHide').each(function (index) {
@@ -95,12 +108,11 @@
     },{offset:'50%'});
 
 
-//jquery.cslider轮播插件的使用
-    $('#da-slider').cslider({
-        autoplay	: true,           //自动播放
-        bgincrement	: 1000            //循环时间
-    });
 
+/** ===================================================================
+ *  03. skills部分
+ *
+ * ------------------------------------------------------------------- */
 //skills相册效果js
     //    pc
     //box1
@@ -222,49 +234,178 @@
     });
 
 
-    //    mobile
-    //边框效果--移入
-    function biankuang(obj){
-        $(obj).find('.biankuang_1').stop(true).animate({
-            height:'100%'
-        },300)
-        $(obj).find('.biankuang_2').stop(true).delay(300).animate({
-            width:'100%'
-        },300)
-        $(obj).find('.biankuang_3').stop(true).animate({
-            height:'100%'
-        },300)
-        $(obj).find('.biankuang_4').stop(true).delay(300).animate({
-            width:'100%'
-        },300)
-    }
-//边框效果--移出
-    function biankuang1(obj){
-
-        $(obj).find('.biankuang_1').stop(true).delay(100).animate({
-            height:'0px'
-        },100)
-        $(obj).find('.biankuang_2').stop(true).animate({
-            width:'0px'
-        },100)
-        $(obj).find('.biankuang_3').stop(true).delay(100).animate({
-            height:'0px'
-        },100)
-        $(obj).find('.biankuang_4').stop(true).animate({
-            width:'0px'
-        },100)
-    }
-//触发
-    $('.spbq').hover(
-        function () {
-            var obj = $(this);
-            biankuang(obj);
-        },
-        function () {
-            var obj = $(this);
-            biankuang1(obj);
+    //    mobile端效果
+        //边框效果--移入
+        function biankuang(obj){
+            $(obj).find('.biankuang_1').stop(true).animate({
+                height:'100%'
+            },300)
+            $(obj).find('.biankuang_2').stop(true).delay(300).animate({
+                width:'100%'
+            },300)
+            $(obj).find('.biankuang_3').stop(true).animate({
+                height:'100%'
+            },300)
+            $(obj).find('.biankuang_4').stop(true).delay(300).animate({
+                width:'100%'
+            },300)
         }
-    )
+        //边框效果--移出
+        function biankuang1(obj){
+
+            $(obj).find('.biankuang_1').stop(true).delay(100).animate({
+                height:'0px'
+            },100)
+            $(obj).find('.biankuang_2').stop(true).animate({
+                width:'0px'
+            },100)
+            $(obj).find('.biankuang_3').stop(true).delay(100).animate({
+                height:'0px'
+            },100)
+            $(obj).find('.biankuang_4').stop(true).animate({
+                width:'0px'
+            },100)
+        }
+        //触发
+        $('.spbq').hover(
+            function () {
+                var obj = $(this);
+                biankuang(obj);
+            },
+            function () {
+                var obj = $(this);
+                biankuang1(obj);
+            }
+        )
+    //skills pc端也移动端行为结束
+
+    //圆圈数字动画效果开始
+    /* Chart numbers absolute centering */
+
+    var chart = $('.chart'),
+        chartNr = $('.chart-content'),
+        chartParent = chart.parent();
+
+    function centerChartsNr() {
+
+        chartNr.css({
+            top: (chart.height() - chartNr.outerHeight()) / 2
+        });
+
+    }
+    //canvas绘制
+    /* Chart numbers absolute centering */
+
+    var chart = $('.chart'),
+        chartNr = $('.chart-content'),
+        chartParent = chart.parent();
+
+    function centerChartsNr() {
+
+        chartNr.css({
+            top: (chart.height() - chartNr.outerHeight()) / 2
+        });
+
+    }
+
+    if (chart.length) {
+
+        centerChartsNr();
+        $(window).resize(centerChartsNr);
+
+        chartParent.each(function () {
+
+            $(this).onScreen({
+                doIn: function () {
+                    $(this).find('.chart').easyPieChart({
+                        scaleColor: false,
+                        lineWidth: 12,
+                        size: 178,
+                        trackColor: false,
+                        lineCap: 'square',
+                        animate: 2000,
+                        onStep: function (from, to, percent) {
+                            $(this.el).find('.percent').text(Math.round(percent));
+                        }
+                    });
+                },
+            });
+
+            $(this).find('.chart').wrapAll('<div class="centertxt" /></div>');
+
+        });
+
+    }
+
+/** ===================================================================
+ *  04. portfolio作品部分
+ *
+ * ------------------------------------------------------------------- */
+//图片筛选插件isotope
+    if($('.isotopeWrapper').length){
+        var $container = $('.isotopeWrapper');
+        var $resize = $('.isotopeWrapper').attr('id');
+        // initialize isotope
+        $container.isotope({
+            itemSelector: '.isotopeItem',
+            resizable: false, // disable normal resizing
+            masonry: {
+                columnWidth: $container.width() / $resize
+            }
+
+        });
+        $('#filter a').click(function(){
+            $('#filter a').removeClass('current');
+            $(this).addClass('current');
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector,
+            });
+            return false;
+        });
+        $(window).smartresize(function(){
+            $container.isotope({
+                // update columnWidth to a percentage of container width
+                masonry: {
+                    columnWidth: $container.width() / $resize
+                }
+            });
+        });
+    }
+
+//lightGallery灯箱插件设置
+    $('.portfolio-items').lightGallery({
+        showThumbByDefault: true,
+        hash: false,
+        selector: ".portfolio-item" ,
+        autoplayControls:false,
+        actualSize:false,
+        scale:0.7,
+        mode:'lg-rotate-rev'
+    });
+
+
+/** ===================================================================
+ *  05. footer作品部分
+ *
+ * ------------------------------------------------------------------- */
+    //返回顶部
+    $(".scroll").click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+    });
+    $("#toTop").click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:0},1200);
+    });
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() >= 500) {
+            $("#toTop").css("opacity","1");
+        } else {
+            $("#toTop").css("opacity","0");
+        }
+    });
+
 
 })(jQuery);
 

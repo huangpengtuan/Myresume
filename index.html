@@ -20,7 +20,8 @@
     <!-- css文件的引入
      ================================================== -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!--<link rel="stylesheet" href="css/animate.min.css">-->
+    <link rel="stylesheet" href="css/isotope.css">
+    <link rel="stylesheet" href="css/lightgallery.min.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/base.css">
     <!-- script
@@ -64,13 +65,13 @@
                         <li id="drop" class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interest <span class="caret"></span></a>
                             <ul class="dropdown-menu">
+                                <li ><span>吐槽</span></li>
+                                <li><a href="aboutme.html">吐槽一</a></li>
+                                <li role="separator" class="divider"></li>
                                 <li ><span>骑行</span></li>
                                 <li><a href="#">西藏318</a></li>
                                 <li><a href="#">海南环岛</a></li>
                                 <li><a href="#">青海环湖</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li ><span>漫画</span></li>
-                                <li><a href="#">海贼王</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -142,14 +143,14 @@
                             <i class="icon-jop"></i>
                         </div>
                         <div class="timeline-header">
-                            <p class="timeframe">2015.10~2017.3</p>
-                            <h3>英迈思文化科技有限公司</h3>
+                            <p class="timeframe">2015.08 - 2017.03</p>
+                            <h3>深圳车多网络科技有限公司</h3>
                         </div>
                         <div class="timeline-content">
                             <h4>公司简介：</h4>
-                            <p>深圳英迈思文化科技有限公司含犀牛云事业部、互联网金融事业部、公共事业部、客户事业部四大业务线。是一家从事网站建设、网站管理、电子商务、电子政务、行业信息化、移动APP开发、IDC数据存储等一系列产品服务的互联网公司。</p>
+                            <p>深圳车多网络技术有限公司专注于汽车互联网行业的新兴科技公司，以先进的互联网与移动网平台为载体，在全国近400个城市为车主提供优质、便捷的本地汽车互联网生活服务。车多网依托多年互联网、移动网开发与运营经验，完美结合位置服务、云计算、物联网技术。</p>
                             <h4>岗位&职责：</h4>
-                            <p>前端工程师，任职公司客户事业部，主要负责公司承接外包项目的前端技术开发工作。</p>
+                            <p>前端工程师，任职公司技术部，主要负责公司App内嵌网页和公司官网，活动页的前端技术开发工作。</p>
                         </div>
                     </div>
                     <div class="timeline-block">
@@ -157,12 +158,12 @@
                             <i class="icon-jop"></i>
                         </div>
                         <div class="timeline-header">
-                            <p class="timeframe">2014.12~2015.10</p>
-                            <h3>哥里互联网科技有限公司</h3>
+                            <p class="timeframe">2014.10 - 2015.08</p>
+                            <h3>北京踏行天际科技有限公司</h3>
                         </div>
                         <div class="timeline-content">
                             <h4>公司简介：</h4>
-                            <p>广州哥里互联网科技有限公司，是一家专注物流的移动互联网企业，利用物流+互联网技术，整合物流、金融、保险服务、互联网支付平台，形成一站式物流解决方案服务商。</p>
+                            <p>北京踏行天际科技发展有限公司致力于发展互联网健身数字化产品，为客户提供最好的系统健身解决方案，与专业的健身智能硬件，是一家结合智能化硬件产品与软件解决方案的健身系统供应商。</p>
                             <h4>岗位&职责：</h4>
                             <p>前端工程师。主要负责公司官网前端技术开发、修改、调试及维护等工作。</p>
                         </div>
@@ -179,42 +180,39 @@
  ======================================================= -->
 <section id="skills">
     <!--pc端架构-->
-    <div class="pc-style">
-        <div class="container kePublic">
-            <div class="wide fadeHide">
-                <div >
-                    <h3>Skills</h3>
-                    <h2 class="topic">业务能力</h2>
-                </div>
+    <div class="container ">
+        <div class="wide fadeHide">
+            <div >
+                <h3>Skills</h3>
+                <h2 class="topic">业务能力</h2>
             </div>
-
-            <div class="lest">
-                <div class="box1">
-                    <a href="#"><img src="image/1.jpg" alt="" /></a>
-                </div>
-                <div class="box2">
-                    <a href="#"><img src="image/2.jpg" alt="" /></a>
-                </div>
-                <div class="box3">
-                    <a href="#"><img src="image/3.jpg" alt="" /></a>
-                </div>
-                <div class="box4">
-                    <a href="#"><img src="image/4.jpg" alt="" /></a>
-                </div>
-                <div class="box5">
-                    <a href="#"><img src="image/5.jpg" alt="" /></a>
-                </div>
-                <div class="box6">
-                    <a href="#"><img src="image/6.jpg" alt="" /></a>
-                </div>
-            </div>
-
         </div>
-        <div class="clear"></div>
-    </div>
-    <!--移动端架构-->
-    <div class="mobile-style">
-        <div class="container">
+        <div class="pc-style kePublic">
+
+            <div class="lest col-md-12 col-lg-12">
+                <div class="box1 fadeHide">
+                    <a><img src="image/1.png" alt="" /></a>
+                </div>
+                <div class="box2 fadeHide">
+                    <a><img src="image/2.png" alt="" /></a>
+                </div>
+                <div class="box3 fadeHide">
+                    <a><img src="image/3.png" alt="" /></a>
+                </div>
+                <div class="box4 fadeHide">
+                    <a><img src="image/4.png" alt="" /></a>
+                </div>
+                <div class="box5 fadeHide">
+                    <a><img src="image/5.png" alt="" /></a>
+                </div>
+                <div class="box6 fadeHide">
+                    <a><img src="image/6.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="clear"> </div>
+        <!--移动端架构-->
+        <div class="mobile-style">
             <div class="row sph">
                 <div class="col-sm-6">
                     <div class="spbq">
@@ -227,12 +225,10 @@
                                 <span class="icon-w3c"></span>
                             </div>
                             <h2>W3C</h2>
-                            <p>熟练掌握Html/Css/JavaScript构建web项目，熟练掌握DIV+CSS布局、移动端自适应rem布局、CSS3 flex布局，页面结构良好，并保证不同浏览器间兼容性</p>
-                            <b>更新完毕 &nbsp;&nbsp;&nbsp;15783人学习</b>
+                            <p>掌握Html/Css/JS构建web项目，掌握DIV+CSS布局、移动端自适应rem布局、CSS3 flex布局，页面结构良好，并保证不同浏览器兼容性</p>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-sm-6">
                     <div class="spbq">
                         <div class="biankuang biankuang_1"></div>
@@ -241,16 +237,13 @@
                         <div class="biankuang biankuang_4"></div>
                         <div>
                             <div class="service-icon">
-                                <span class="icon-w3c"></span>
+                                <span class="icon-jquery"></span>
                             </div>
-                            <h2>W3C</h2>
-                            <p>熟练掌握Html/Css/JavaScript构建web项目，熟练掌握DIV+CSS布局、移动端自适应rem布局、CSS3 flex布局，页面结构良好，并保证不同浏览器间兼容性</p>
-                            <b>更新完毕 &nbsp;&nbsp;&nbsp;15783人学习</b>
+                            <h2>jQuery</h2>
+                            <p>熟悉原生JavaScript，可使用原生js进行开发。了解面向对象机制，面向对象的函数式编程，理解闭包原理，可自行封装插件</p>
                         </div>
                     </div>
                 </div>
-
-
                 <div class="col-sm-6">
                     <div class="spbq">
                         <div class="biankuang biankuang_1"></div>
@@ -259,27 +252,407 @@
                         <div class="biankuang biankuang_4"></div>
                         <div>
                             <div class="service-icon">
-                                <span class="icon-w3c"></span>
+                                <span class="icon-bootstrap"></span>
                             </div>
-                            <h2>W3C</h2>
-                            <p>熟练掌握Html/Css/JavaScript构建web项目，熟练掌握DIV+CSS布局、移动端自适应rem布局、CSS3 flex布局，页面结构良好，并保证不同浏览器间兼容性</p>
-                            <b>更新完毕 &nbsp;&nbsp;&nbsp;15783人学习</b>
+                            <h2>Bootstrap/Angular</h2>
+                            <p>熟悉各种前端流行框架如Bootstrap、jQuery、Angular等。熟悉移动端常用的布局以及开发技巧，熟悉响应式布局，完成页面各项功能</p>
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-6">
+                    <div class="spbq">
+                        <div class="biankuang biankuang_1"></div>
+                        <div class="biankuang biankuang_2"></div>
+                        <div class="biankuang biankuang_3"></div>
+                        <div class="biankuang biankuang_4"></div>
+                        <div>
+                            <div class="service-icon">
+                                <span class="icon-ajax"></span>
+                            </div>
+                            <h2>Ajax</h2>
+                            <p>熟练使用Ajax和jQuery.ajax技术完成异步通讯的所有功能，以及后台数据同步或异步获取和展示，熟练定义解析JSON数据</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="spbq">
+                        <div class="biankuang biankuang_1"></div>
+                        <div class="biankuang biankuang_2"></div>
+                        <div class="biankuang biankuang_3"></div>
+                        <div class="biankuang biankuang_4"></div>
+                        <div>
+                            <div class="service-icon">
+                                <span class="icon-html"></span>
+                            </div>
+                            <h2>HTML</h2>
+                            <p>热爱前端行业，对技术高度热情，能够独立解决问题，并根据工作需要主动钻研、学习新的技术</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="spbq">
+                        <div class="biankuang biankuang_1"></div>
+                        <div class="biankuang biankuang_2"></div>
+                        <div class="biankuang biankuang_3"></div>
+                        <div class="biankuang biankuang_4"></div>
+                        <div>
+                            <div class="service-icon">
+                                <span class="icon-ps"></span>
+                            </div>
+                            <h2>More</h2>
+                            <p>熟练使用Firework、Photoshop、Axure、XMind等设计相关软件</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"> </div>
+            </div>
+        </div>
+        <!--移动端架构-->
 
-                <div class="clear"></div>
+        <div class="clear"> </div>
+    </div>
+</section>
+<!--skills-section结束
+ ======================================================= -->
+
+<!--munbershow-section开始
+ ======================================================= -->
+<section id="munbershow">
+    <div class="text-light">
+        <div  class="wrap">
+            <div class="row-content1">
+                <div class="chart" data-percent="85" data-bar-color="#4285F4" data-animate="4000">
+                    <div class="chart-content">
+                        <div class="percent"></div>
+                        <div class="chart-title">HTML & CSS</div>
+                    </div>
+                    <!-- chart-content -->
+                </div>
+                <!-- chart -->
+                <div class="chart" data-percent="76" data-bar-color="#EA4335" data-animate="3500">
+                    <div class="chart-content">
+                        <div class="percent"></div>
+                        <div class="chart-title">JS & jQuery</div>
+                    </div>
+                    <!-- chart-content -->
+                </div>
+                <!-- chart -->
+                <div class="chart" data-percent="70" data-bar-color="#FBBC05" data-animate="3000">
+                    <div class="chart-content">
+                        <div class="percent"></div>
+                        <div class="chart-title">Angular</div>
+                    </div>
+                    <!-- chart-content -->
+                </div>
+                <!-- chart -->
+                <div class="chart" data-percent="90" data-bar-color="#4285F4" data-animate="5500">
+                    <div class="chart-content">
+                        <div class="percent"></div>
+                        <div class="chart-title">Bootstrap</div>
+                    </div>
+                    <!-- chart-content -->
+                </div>
+                <!-- chart -->
+                <div class="chart" data-percent="70" data-bar-color="#34A853" data-animate="3200">
+                    <div class="chart-content">
+                        <div class="percent"></div>
+                        <div class="chart-title">Ps</div>
+                    </div>
+                    <!-- chart-content -->
+                </div>
+                <!-- chart -->
+                <div class="clear"> </div>
             </div>
         </div>
     </div>
 
 </section>
-<!--skills-section结束
+<!--munbershow-section结束
+ ======================================================= -->
+
+<!--portfolio-section开始
+ ======================================================= -->
+<section id="portfolio">
+    <div class="grid container">
+        <div class="wide fadeHide">
+            <div >
+                <h3>Portfolio</h3>
+                <h2 class="topic">案例集</h2>
+            </div>
+        </div>
+        <div class="portfolio-content">
+            <a href="http://www.cheduo.com/" target="_blank">
+                <div class="box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                        <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                        <line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+                        <line class="bottom" x1="300" y1="336" x2="-600" y2="336"/>
+                        <line class="right" x1="200" y1="0" x2="200" y2="1380"/>
+                    </svg>
+                    <h3>A</h3>
+                    <h4>车多网</h4>
+                    <span>www.cheduo.com</span>
+                </div>
+            </a>
+
+            <a href="http://www1.taxingtianji.com/" target="_blank">
+                <div class="box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                        <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                        <line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+                        <line class="bottom" x1="300" y1="336" x2="-600" y2="336"/>
+                        <line class="right" x1="200" y1="0" x2="200" y2="1380"/>
+                    </svg>
+                    <h3>B</h3>
+                    <h4>踏行天际</h4>
+                    <span>www.taxingtianji.com</span>
+                </div>
+            </a>
+            <a href="https://huangpengtuan.github.io/moutai/" target="_blank">
+                <div class="box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                        <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                        <line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+                        <line class="bottom" x1="300" y1="336" x2="-600" y2="336"/>
+                        <line class="right" x1="200" y1="0" x2="200" y2="1380"/>
+                    </svg>
+                    <h3>C</h3>
+                    <h4>酒易网</h4>
+                    <span>huangpengtuan.github.io/moutai</span>
+                </div>
+            </a>
+            <a href="https://huangpengtuan.github.io/demo2/" target="_blank">
+                <div class="box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                        <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                        <line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+                        <line class="bottom" x1="300" y1="336" x2="-600" y2="336"/>
+                        <line class="right" x1="200" y1="0" x2="200" y2="1380"/>
+                    </svg>
+                    <h3>D</h3>
+                    <h4>demo2</h4>
+                    <span>https://huangpengtuan.github.io/demo2</span>
+                </div>
+            </a>
+        </div>
+
+    </div><!-- /grid -->
+</section>
+
+<!--portfolio-section结束
+ ======================================================= -->
+
+
+
+<!--interest-section开始
+ ======================================================= -->
+<section id="interest">
+    <div class="centertxt">
+        <div class="row ">
+            <div class="text-center">
+                <h2 class="flash-header topic">Interest</h2>
+                <p class="flash-content">生活记录</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <nav id="filter" class="text-center">
+                <ul>
+                    <li class="fadeHide"><a href="#" class="current btn-theme btn-small" data-filter="*">所有</a></li>
+                    <li class="fadeHide"><a href="#"  class="btn-theme btn-small" data-filter=" .xizang" >西藏318</a></li>
+                    <li class="fadeHide"><a href="#"  class="btn-theme btn-small" data-filter=".qinghai">青海环湖</a></li>
+                    <li class="fadeHide" ><a href="#" class="btn-theme btn-small" data-filter=".hainan">海南环岛</a></li>
+                </ul>
+            </nav>
+            <div class="portfolio-items isotopeWrapper clearfix text-center fadeHide" id="4">
+
+                <article class="col-md-3 isotopeItem xizang">
+                    <div class="portfolio-item" data-src="image/img1.jpg" >
+                        <img src="image/img1.jpg" alt="" />
+                        <div class="item-text">
+                            <span class="folio-types">伙伴</span>
+                            <h3 class="folio-title">千金易得，团队难求</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 isotopeItem hainan">
+                    <div class="portfolio-item" data-src="image/img2.png">
+                        <img src="image/img2.png" alt="" />
+                        <div class="item-text">
+                            <span class="folio-types">海南</span>
+                            <h3 class="folio-title">路不远，但是时间啊，别跑得那么快</h3>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="col-md-3 isotopeItem xizang">
+                    <div class="portfolio-item" data-src="image/img3.jpg">
+                        <img src="image/img3.jpg" alt="" />
+                        <div class="item-text">
+                            <span class="folio-types">天空</span>
+                            <h3 class="folio-title">天空像个初生的小孩子一样纯粹</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 isotopeItem hainan">
+                    <div class="portfolio-item" data-src="image/img4.png">
+                        <img src="image/img4.png" alt="" />
+                        <div class="item-text">
+                            <span class="folio-types">再遇见你</span>
+                            <h3 class="folio-title">当初要是牵手，现在会不会偎依？</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 isotopeItem xizang">
+                    <div class="portfolio-item" data-src="image/img5.jpg">
+                        <img src="image/img5.jpg" alt="" />
+                        <div class="item-text">
+                            <span class="folio-types">西藏路边的麦田</span>
+                            <h3 class="folio-title">自然是最好的调色师</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 isotopeItem xizang">
+                    <div class="portfolio-item" data-src="image/img6.jpg">
+                        <img src="image/img6.jpg" alt="" />
+                        <div class="item-text">
+                            <span class="folio-types">到达</span>
+                            <h3 class="folio-title">是终点，但谁说不是起点呢？</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 isotopeItem qinghai">
+                    <div class="portfolio-item" data-src="image/img7.png">
+                        <img src="image/img7.png" alt="" />
+                        <div class="item-text">
+                            <span class="folio-types">青海天空之境</span>
+                            <h3 class="folio-title">天堂此时那么近</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 isotopeItem qinghai">
+                    <div class="portfolio-item" data-src="image/img9.png">
+                        <img src="image/img9.png" alt="" />
+                        <div class="item-text">
+                            <span class="folio-types">青海湖</span>
+                            <h3 class="folio-title">再美丽的赞美都不足以形容的美好</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 isotopeItem xizang">
+                    <div class="portfolio-item" data-src="image/img10.jpg">
+                        <img src="image/img10.jpg" alt="" />
+                        <div class="item-text">
+                            <span class="folio-types">藏族姑娘</span>
+                            <h3 class="folio-title">纯粹的眼睛</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 isotopeItem hainan">
+                    <div class="portfolio-item" data-src="image/img12.jpg">
+                        <img src="image/img12.jpg" alt="" />
+                        <div class="item-text">
+                            <span class="folio-types">海南517</span>
+                            <h3 class="folio-title">海南第一站</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 isotopeItem xizang">
+                    <div class="portfolio-item" data-src="image/img14.jpg">
+                        <img src="image/img14.jpg" alt="" />
+                        <div class="item-text">
+                            <span class="folio-types">冲向拉萨</span>
+                            <h3 class="folio-title">此时的你们还好么？</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-md-3 isotopeItem qinghai">
+                    <div class="portfolio-item" data-src="image/img15.png">
+                        <img src="image/img15.png" alt="" />
+                        <div class="item-text">
+                            <span class="folio-types">茶卡盐湖</span>
+                            <h3 class="folio-title">爱她，就带她去哪里吧</h3>
+                        </div>
+                    </div>
+                </article>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<!--interest-section结束
  ======================================================= -->
 
 <!--footer开始
  ======================================================= -->
-<footer>
+<footer id="footer" class="footer">
+    <div class="container" >
+        <div class="wrap">
+            <div class="row-content buffer clear-after">
+                <section id="top-footer">
+                    <div class="widget column three"><!-- la class="widget" è forse generata utomaticamente da wp -->
+                        <h4>Menu</h4>
+                        <ul class="plain">
+                            <li> <a href="#home" class="scroll">Home</a> </li>
+                            <li><a href="#aboutme" class="scroll">Aboutme</a></li>
+                            <li><a href="#skills" class="scroll">Skills</a> </li>
+                            <li><a href="#portfolio" class="scroll">Portfolio</a></li>
+                            <li><a href="#interest" class="scroll">Interest</a></li>
+                            <div class="clear"> </div>
+                        </ul>
+                    </div>
+                    <div class="widget column three">
+                        <h4>Archives</h4>
+                        <ul class="plain">
+                            <li><a >March 2014</a></li>
+                            <li><a >April 2014</a></li>
+                            <li><a >May 2014</a></li>
+                            <li><a >June 2014</a></li>
+                            <li><a >July 2014</a></li>
+                            <div class="clear"> </div>
+                        </ul>
+                    </div>
+                    <div class="widget column three">
+                        <h4>Widget</h4>
+                        <p>Code&Design by tuan© Copyright tuan 2016.</p>
+                    </div>
+                    <div class="widget meta-social column three last">
+                        <div class="soc_icons soc_icons1">
+                            <h4>Follows</h4>
+                            <ul>
+                                <li class=""><a class="icon-QQ"></a></li>
+                                <li class=""><a class="icon-weibo"> </a></li>
+                                <li class=""><a class="icon-weixin"> </a></li>
+                            </ul>
+                            <div class="clear"> </div>
+                        </div>
+                    </div>
+                    <div class="clear"> </div>
+                </section>
+                <!-- top-footer -->
+
+            </div>
+            <!-- row-content -->
+        <!-- scroll_top_btn -->
+        </div>
+            <a href="#" id="toTop"></a>
+        </div>
 
 </footer>
 <!--footer结束
@@ -296,7 +669,9 @@
 
 <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/plugins.js"></script>
+<script type="text/javascript" src="js/plugins02.js"></script>
+<script type="text/javascript" src="js/plugins01.js"></script>
+<!--<script type="text/javascript" src="js/script.js"></script>-->
 
 <script type="text/javascript" src="js/main01.js"></script>
 
